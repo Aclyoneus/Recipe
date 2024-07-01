@@ -5,6 +5,7 @@
 }
 
 html {
+    font-family: "Roboto", sans-serif;
     font-size: 62.5%;
     height: 100%;
     width: 100%;
@@ -16,30 +17,103 @@ html {
 .recipe {
     background-image: url("img/Caprese.jpg");
     background-size: cover;
-    width: 1000px;
+    max-width: 1000px;
     height: 600px;
-    display: flex;
-    justify-content: center;
 }
 
 .header {
-    margin-top: 2%;
     height: 10%;
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-container {
+    height: 90%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
     border: 3px solid black;
     border-radius: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
 .header-text {
     color: whitesmoke;
     font-size: 3rem;
     text-shadow: 3px 3px black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dish {
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-description, .dish-ingredients {
+    width: 30%;
+    margin-top: 2%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.dish-ingredients {
+    height: 15%;
+}
+
+.container {
+    padding: 5px 5px;
+}
+
+.dish-description-header, .dish-ingredients-header, .instruction-header {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.dish-description-text {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: .3px;
+}
+
+.dish-ingredients-entry, .instruction-step {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: .3px;
+}
+
+.list {
+    list-style-position: inside;
+}
+
+.animal {
+    color: white;
+}
+
+.vegan {
+    color: green;
+}
+
+.instruction {
+    display: flex;
+    justify-content: center;
+}
+
+.instruction-container {
+    width: 80%;
+    margin-top: 3%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
 
