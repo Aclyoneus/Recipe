@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe {
+    background-image: url("img/Caprese.jpg");
+    background-size: cover;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    margin-top: 2%;
+    height: 10%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header-text {
+    color: whitesmoke;
+    font-size: 3rem;
+    text-shadow: 3px 3px black;
+}
+
+
