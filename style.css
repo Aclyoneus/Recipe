@@ -39,8 +39,10 @@ html {
 }
 
 .header-text {
+    padding: 5px 10px;
     color: mediumseagreen;
     font-size: 3rem;
+    text-align: center;
     text-shadow: 3px 3px black;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -54,6 +56,7 @@ html {
 
 .dish-description, .dish-ingredients {
     width: 35%;
+    height: 15%;
     margin-top: 2%;
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.85);
@@ -167,5 +170,10 @@ b {
     .dish-ingredients-list {
         align-items: flex-start;
     }
+
+    .dish-description, .dish-ingredients {
+        width: 80%;
+    }
+
 }
 
