@@ -17,8 +17,7 @@ html {
 .recipe {
     background-image: url("img/Caprese.jpg");
     background-size: cover;
-    max-width: 1000px;
-    height: 600px;
+    background-position: center;
 }
 
 .header {
@@ -54,7 +53,7 @@ html {
 }
 
 .dish-description, .dish-ingredients {
-    width: 30%;
+    width: 35%;
     margin-top: 2%;
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.85);
@@ -67,7 +66,7 @@ html {
 }
 
 .container {
-    padding: 5px 5px;
+    padding: 10px 10px;
 }
 
 .dish-description-header, .dish-ingredients-header, .instruction-header {
@@ -79,9 +78,16 @@ html {
 }
 
 .dish-description-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: .3px;
+    text-align: justify;
+}
+
+.dish-ingredients-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dish-ingredients-entry {
@@ -116,6 +122,12 @@ html {
     border-radius: 10px;
 }
 
+.instruction-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .instruction-step {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -123,5 +135,37 @@ html {
 
 b {
     color: mediumseagreen;
+}
+
+@media (max-width: 992px) {
+
+    .dish-ingredients-list, .instruction-list {
+        align-items: flex-start;
+        list-style-position: outside;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .dish {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish-description, .dish-ingredients {
+        width: 60%;
+    }
+
+    .dish-ingredients-list {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .dish-ingredients-list {
+        align-items: flex-start;
+    }
 }
 
