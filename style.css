@@ -166,7 +166,11 @@ b {
     }
 
     .header-text {
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .dish-description-header {
+        text-align: center;
     }
 
     .dish-ingredients-list {
