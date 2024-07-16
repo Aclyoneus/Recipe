@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+}
+
+.recipe {
+    padding: 2rem 0 2rem;
+    height: 100vh;
+    background-image: url("img/Caprese.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.header-text {
+    padding: 5px 10px;
+    color: mediumseagreen;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dish {
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-description, .dish-ingredients {
+    width: 35%;
+    height: 15%;
+    margin-top: 2%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.dish-ingredients {
+    height: 15%;
+}
+
+.container {
+    padding: 10px 10px;
+}
+
+.dish-description-header, .dish-ingredients-header, .instruction-header {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.dish-description-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .3px;
+    text-align: justify;
+}
+
+.dish-ingredients-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dish-ingredients-entry {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: .3px;
+}
+
+.list {
+    list-style-position: inside;
+}
+
+.animal {
+    color: white;
+}
+
+.vegan {
+    color: mediumseagreen;
+}
+
+.instruction {
+    display: flex;
+    justify-content: center;
+}
+
+.instruction-container {
+    width: 90%;
+    margin-top: 8%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.instruction-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instruction-step {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+b {
+    color: mediumseagreen;
+}
+
+@media (max-width: 992px) {
+    .dish-ingredients-list, .instruction-list {
+        align-items: flex-start;
+        list-style-position: outside;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dish {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish-description, .dish-ingredients {
+        width: 60%;
+    }
+
+    .dish-ingredients-list {
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .recipe {
+        height: 100%;
+    }
+
+    .header-text {
+        font-size: 2.5rem;
+    }
+
+    .dish-description-header {
+        text-align: center;
+    }
+
+    .dish-ingredients-list {
+        align-items: flex-start;
+    }
+
+    .dish-description, .dish-ingredients {
+        width: 80%;
+    }
+}
